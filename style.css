@@ -4,5 +4,53 @@
     }
 
 
+body{
+    height: 100vh;
+}
 
-#side{}
+.text{
+    font-family: norse_bold;
+    color: white;
+    font-size: 100px;
+    align-self: center;
+    opacity: 1;
+
+}
+
+.content{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+#side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.5;
+    background-image: url(images&fonts/bg.jpg);
+    background-size: cover;
+
+}
+
+.form{
+    flex: 1;
+    color: aqua;
+}
+
+.logo{
+    height: fit-content;
+    flex:1;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    flex-direction: row;
+}
+
+
+img{
+    object-fit: contain;
+    width: 100px;
+    height: 150px ;
+    opacity: 1;
+}
