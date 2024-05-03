@@ -6,6 +6,8 @@
 
 body{
     height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .text{
@@ -38,6 +40,8 @@ body{
     flex: 1;
     color: aqua;
     flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .logo{
@@ -67,13 +71,75 @@ img{
     font-style: normal;
     color: black;
     font-size: 15px;
-    padding-left: 10px;
     padding-top: 130px;
-    padding-bottom: 0px;
-    margin-bottom: 0%;
   }
-  
-  p{
-    padding-bottom: 0px;
-    margin-bottom: 0%;
+
+.realForm{
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.realForm,.formTitle{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    color: black;
+
   }
+
+
+
+.formTitle{
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+  .realForm form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    gap: 50px;
+    justify-content: space-between;
+
+}
+
+.row1,.row2,.row3 {
+    display: flex;
+    max-width: fit-content;
+    flex: 0 1;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    max-width: fit-content;
+    margin-bottom: 5px;
+}
+
+.buttons{
+    margin-top: 41px;
+}
+
+button {
+    background-color: #2c9107;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    /* Add any additional styling you'd like */
+}
+
+.buttons div{
+    color:black;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: #2c9107;
+}
