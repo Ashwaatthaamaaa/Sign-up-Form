@@ -34,8 +34,10 @@ body{
 }
 
 .form{
+    display: flex;
     flex: 1;
     color: aqua;
+    flex-direction: column;
 }
 
 .logo{
@@ -54,3 +56,24 @@ img{
     height: 150px ;
     opacity: 1;
 }
+
+.quote,.realForm,.buttons{
+    flex: 0.33;
+}
+
+.quote {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 130px;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+  }
+  
+  p{
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+  }
