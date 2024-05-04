@@ -26,27 +26,33 @@
         <div class="realForm">
             <div class="formTitle">Lets do this</div>
             <form action="" method="">
-                <div class="row1">
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name">
+                <div class="details">
+                    <div class="box">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div class="box">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div class="box">  
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
                   
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-              
-                </div>
-                <div class="row2">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name"> 
-                    
-                    <label for="Phone Number">Phone Number</label>
-                    <input type="tel" id="Phone Number" name="Phone Number">         
-                </div>
-                <div class="row3">
-                    <label for="Password">Password</label>
-                    <input type="password" id="Password" name="Password">
-                  
-                    <label for="Cnf_pass">Confirm Password</label>
-                    <input type="password" id="Cnf_pass" name="Cnf_pass">         
+                    </div>
+                    <div class="box">
+                        <label for="Phone Number">Phone Number</label>
+                        <input type="tel" id="Phone Number" name="Phone Number">         
+                    </div>
+                    <div class="box">
+                        <label for="Password">Password</label>
+                        <input type="password" id="Password" name="Password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$" title="Password must contain at least one uppercase letter, one lowercase letter, one digit, one special character, and be at least 8 characters long" >
+                    </div>
+                    <div class="box">
+                        <label for="Cnf_pass">Confirm Password</label>
+                        <input type="password" id="Cnf_pass" name="Cnf_pass" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$" title="Password must contain at least one uppercase letter, one lowercase letter, one digit, one special character, and be at least 8 characters long" >
+                        <div id="passwordError" class="error">*Password doesn't match the requirements.</div>         
+                    </div>    
                 </div>
             </form>
         </div>
@@ -56,5 +62,6 @@
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
